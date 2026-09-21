@@ -186,8 +186,8 @@ def make_plots(data_file: Path, output_dir: Path, dpi: int = 300, show: bool = F
 
     saved = []
     for plot_function, filename in [
-        (plot_group_medians, "true_false_spectra_pearson_exp003_paper.png"),
-        (plot_median_differences, "true_false_difference_spectra_pearson_exp003_paper.png"),
+        (plot_group_medians, "figure_6.png"),
+        (plot_median_differences, "figure_7.png"),
     ]:
         figure = plot_function(data)
         path = output_dir / filename
